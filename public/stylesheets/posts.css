@@ -1,0 +1,19 @@
+.post {
+    border: solid black 2px;
+    border-bottom: none;
+}
+
+.posts-container .container:last-child {
+    border-bottom: solid black 2px;
+    margin-bottom: 16px;
+}
+
+.post-user {
+    border-right: solid black 1px;
+    background-color: #EFF0F1;
+    padding: 16px;
+}
+
+.post-content {
+    padding: 16px;
+}

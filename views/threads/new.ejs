@@ -1,0 +1,12 @@
+<%- include("../partials/header", {pageStyle: "threads"}) %>
+
+<div class="container">
+    <h1>New thread</h1>
+    
+    <form method="POST" action="/threads">
+        <input type="text" name="thread[title]" placeholder="Thread title..."/>
+        <button class="btn btn-primary">Create</button>
+    </form>
+</div>
+
+<% include ../partials/footer %>

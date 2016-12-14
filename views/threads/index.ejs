@@ -1,0 +1,24 @@
+<%- include("../partials/header", {pageStyle: "threads"}) %>
+
+<div class="container">
+    <h1>Threads</h1>
+    
+     <!--threads-->
+    <div class="threads-container"> 
+        <% threads.forEach(function(t) { %>
+            <div class="container">
+                <div class="thread">
+                    <a href="/threads/<%= t._id %>"><%= t.title %></a>
+                    <p>Created by <%= t.creator.username %></p>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+    
+    
+    
+    <a role="button" class="btn btn-success" href="/threads/new" >New thread</a>
+    
+</div>
+
+<% include ../partials/footer %>

@@ -1,0 +1,12 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <h1>New post for thread: </h1>
+    <h3><%= thread.title %></h3>
+    <form method="POST" action="/threads/<%= thread._id %>/posts">
+        <input type="text" name="post[text]" placeholder="Your post text here..."/>
+        <button class="btn btn-primary">Create</button>
+    </form>
+</div>
+
+<% include ../partials/footer %>
